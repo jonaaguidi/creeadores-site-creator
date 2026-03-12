@@ -229,7 +229,7 @@ export default function HomePage() {
         <div className="min-h-[calc(50vh-12px)] md:min-h-[calc(70vh-12px)] lg:min-h-[calc(90vh-12px)] max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 relative z-20 flex items-center">
           <div className="w-full lg:w-[42%] pb-12 sm:pb-20 lg:py-0 text-left flex flex-col items-start">
             <div
-              className="inline-flex items-center gap-2 sm:gap-3 px-3 py-1 sm:px-5 sm:py-1.5 rounded-full mb-5 backdrop-blur-lg"
+              className="inline-flex items-center gap-2 sm:gap-3 px-3 py-1 sm:px-5 sm:py-1.5 rounded-full mb-5 backdrop-blur-lg animate-shine"
               style={{ backgroundColor: "rgba(255, 255, 255, 0.6)", border: "1px solid rgba(0, 25, 218, 0.25)", boxShadow: "0 2px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04)" }}
             >
               <span className="flex items-center gap-1.5 uppercase text-[10px] sm:text-[11px]" style={{ fontWeight: 700, letterSpacing: "0.06em", color: "#030870" }}>

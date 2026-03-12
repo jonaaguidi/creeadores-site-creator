@@ -141,3 +141,26 @@
 .nav-link-light::after {
   background: linear-gradient(90deg, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
 }
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 70%
+  );
+  animation: shine 3s ease-in-out infinite;
+}
