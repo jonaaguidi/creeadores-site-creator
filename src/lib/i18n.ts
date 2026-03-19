@@ -654,6 +654,7 @@ const portuguese: AppDictionary = {
       badge: "REPUTA\u00c7\u00c3O",
       title: "Sua reputa\u00e7\u00e3o \u00e9\nseu melhor ativo",
       description: "Cada campanha completada constr\u00f3i sua reputa\u00e7\u00e3o. Suba de n\u00edvel e acesse melhores oportunidades.",
+      ctaButton: "Comece a monetizar seu conte\u00fado",
       plans: [
         { name: "Novo", description: "Voc\u00ea acabou de chegar ao Creeadores", price: null, period: "", features: [{ iconName: "users", text: "Perfil b\u00e1sico" }, { iconName: "megaphone", text: "Candidaturas limitadas" }, { iconName: "percent", text: "Badge de novo criador" }], cta: "Criar meu perfil", popular: false, iconName: "check", customPriceLabel: "Comece aqui" },
         { name: "Bronze", description: "Voc\u00ea completou suas primeiras campanhas", price: null, period: "", features: [{ iconName: "users", text: "Perfil verificado" }, { iconName: "megaphone", text: "Candidaturas ilimitadas" }, { iconName: "percent", text: "Vis\u00edvel na busca de marcas" }], cta: "Come\u00e7ar agora", popular: false, iconName: "shield", customPriceLabel: "1+ campanhas" },
