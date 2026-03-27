@@ -166,7 +166,7 @@
 }
 
 .animate-hero-marquee {
-  animation: hero-marquee 40s linear infinite;
+  animation: hero-marquee 120s linear infinite;
 }
 
 .animate-shine {
