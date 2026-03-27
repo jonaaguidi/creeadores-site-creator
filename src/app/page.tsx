@@ -123,18 +123,19 @@ export default function HomePage() {
   const { hero } = dictionary.home
   const modalVideoRef = useRef<HTMLVideoElement>(null)
   const [showVideoModal, setShowVideoModal] = useState(false)
-  const [modalClosing, setModalClosing] = useState(false)
-  const [modalVideoSrc, setModalVideoSrc] = useState("/videos/hero-reel-2.mp4")
+  const [modalVisible, setModalVisible] = useState(false)
+  const [modalVideoSrc, setModalVideoSrc] = useState("/videos/clean-it-ugc.mp4")
 
   const openVideoModal = (videoSrc: string) => {
     setModalVideoSrc(videoSrc)
     setShowVideoModal(true)
+    requestAnimationFrame(() => requestAnimationFrame(() => setModalVisible(true)))
   }
 
   const closeModal = () => {
-    setModalClosing(true)
+    setModalVisible(false)
     modalVideoRef.current?.pause()
-    setTimeout(() => { setShowVideoModal(false); setModalClosing(false) }, 300)
+    setTimeout(() => setShowVideoModal(false), 300)
   }
 
   return (
@@ -251,7 +252,7 @@ export default function HomePage() {
 
         {/* iPhone marquee */}
         <div className="relative z-20 pb-6 sm:pb-10">
-          <HeroCarousel />
+          <HeroCarousel onVideoClick={openVideoModal} />
         </div>
 
         <div
@@ -277,8 +278,8 @@ export default function HomePage() {
       {/* Video Modal */}
       {showVideoModal && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300"
-          style={{ backgroundColor: "rgba(0,0,0,0.85)", opacity: modalClosing ? 0 : 1 }}
+          className="fixed inset-0 z-50 flex items-center justify-center transition-all duration-300 ease-out"
+          style={{ backgroundColor: "rgba(0,0,0,0.85)", opacity: modalVisible ? 1 : 0 }}
           onClick={closeModal}
         >
           <button
@@ -288,8 +289,8 @@ export default function HomePage() {
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
           </button>
           <div
-            className="relative transition-all duration-300"
-            style={{ width: "min(380px, 90vw)", aspectRatio: "9/16", borderRadius: "24px", overflow: "hidden", boxShadow: "0 30px 80px rgba(0,0,0,0.5)", transform: modalClosing ? "scale(0.9)" : "scale(1)", opacity: modalClosing ? 0 : 1 }}
+            className="relative transition-all duration-300 ease-out"
+            style={{ width: "min(380px, 90vw)", aspectRatio: "9/16", borderRadius: "24px", overflow: "hidden", boxShadow: "0 30px 80px rgba(0,0,0,0.5)", transform: modalVisible ? "scale(1)" : "scale(0.85)", opacity: modalVisible ? 1 : 0 }}
             onClick={(e) => e.stopPropagation()}
           >
             <video

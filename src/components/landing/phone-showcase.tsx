@@ -3,9 +3,9 @@
 import { motion } from "motion/react"
 
 const phones = [
-  { videoSrc: "/videos/phone-demo-1.mp4" },
-  { videoSrc: "/videos/phone-demo-2.mp4" },
-  { videoSrc: "/videos/phone-demo-3.mp4" },
+  { videoSrc: "/videos/lamode-cartera.mp4" },
+  { videoSrc: "/videos/neko-sushi.mp4" },
+  { videoSrc: "/videos/marroquineria-50.mp4" },
 ]
 
 export function PhoneShowcase() {

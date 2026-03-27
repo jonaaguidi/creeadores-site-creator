@@ -14,7 +14,7 @@ export function HeroPhonesStatic({ scrollY, onPlayClick }: HeroPhonesStaticProps
       <div className="relative flex-shrink-0 overflow-hidden z-10 hidden sm:block transition-transform duration-100" style={{ width: "clamp(120px, 18vw, 170px)", height: "clamp(250px, 38vw, 360px)", border: "2px solid #2c2c2e", borderRadius: "clamp(22px, 3vw, 32px)", background: "#2c2c2e", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.5), 0 20px 50px rgba(0,0,0,0.3), 0 8px 20px rgba(0,0,0,0.15), 0 2px 6px rgba(0,0,0,0.1)", transform: `rotateY(12deg) translateY(${scrollY * -0.15}px)` }}>
         <div className="absolute top-1.5 left-1/2 -translate-x-1/2 z-20" style={{ width: "clamp(30px, 4vw, 42px)", height: "clamp(8px, 1.2vw, 12px)", backgroundColor: "#2c2c2e", borderRadius: "10px" }} />
         <div className="absolute inset-[3px] overflow-hidden" style={{ borderRadius: "clamp(19px, 2.7vw, 29px)" }}>
-          <video src="/videos/hero-reel-3.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+          <video src="/videos/audoor-molinete.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.5)" }} />
         </div>
       </div>
@@ -26,7 +26,7 @@ export function HeroPhonesStatic({ scrollY, onPlayClick }: HeroPhonesStaticProps
       >
         <div className="absolute top-2 sm:top-2.5 left-1/2 -translate-x-1/2 z-20" style={{ width: "clamp(40px, 5vw, 56px)", height: "clamp(11px, 1.5vw, 16px)", backgroundColor: "#2c2c2e", borderRadius: "12px" }} />
         <div className="absolute inset-[3px] overflow-hidden" style={{ borderRadius: "clamp(25px, 3.7vw, 37px)", animation: "subtleGlow 4s ease-in-out infinite" }}>
-          <video src="/videos/hero-reel-2.mp4" muted playsInline className="w-full h-full object-cover" />
+          <video src="/videos/clean-it-ugc.mp4" muted playsInline className="w-full h-full object-cover" />
           {/* Play button */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center">
@@ -43,7 +43,7 @@ export function HeroPhonesStatic({ scrollY, onPlayClick }: HeroPhonesStaticProps
       <div className="relative flex-shrink-0 overflow-hidden z-10 hidden sm:block transition-transform duration-100" style={{ width: "clamp(120px, 18vw, 170px)", height: "clamp(250px, 38vw, 360px)", border: "2px solid #2c2c2e", borderRadius: "clamp(22px, 3vw, 32px)", background: "#2c2c2e", boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.5), 0 20px 50px rgba(0,0,0,0.3), 0 8px 20px rgba(0,0,0,0.15), 0 2px 6px rgba(0,0,0,0.1)", transform: `rotateY(-12deg) translateY(${scrollY * -0.15}px)` }}>
         <div className="absolute top-1.5 left-1/2 -translate-x-1/2 z-20" style={{ width: "clamp(30px, 4vw, 42px)", height: "clamp(8px, 1.2vw, 12px)", backgroundColor: "#2c2c2e", borderRadius: "10px" }} />
         <div className="absolute inset-[3px] overflow-hidden" style={{ borderRadius: "clamp(19px, 2.7vw, 29px)" }}>
-          <video src="/videos/hero-reel.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+          <video src="/videos/la-clasica-calle.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
           <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.5)" }} />
         </div>
       </div>
