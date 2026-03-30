@@ -99,7 +99,7 @@ export function LandingFooter() {
               <select
                 value={locale}
                 onChange={(e) => setLocale(e.target.value as Locale)}
-                className="appearance-none bg-transparent text-white/40 hover:text-white/70 transition-colors cursor-pointer pr-4 outline-none"
+                className="appearance-none bg-transparent text-white/40 hover:text-white/70 transition-colors cursor-pointer pr-4 outline-none w-[78px]"
                 style={{ fontSize: "12px", fontWeight: 400 }}
               >
                 {footerLocales.map((loc) => (
