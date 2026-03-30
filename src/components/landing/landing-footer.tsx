@@ -5,14 +5,13 @@ import Link from "next/link"
 import { Logo } from "@/components/logo"
 import { useLanguage } from "@/components/language-provider"
 import { appLink } from "@/lib/links"
-import { SUPPORTED_LOCALES, type Locale } from "@/lib/i18n"
+import { type Locale } from "@/lib/i18n"
 
-const localeLabels: Record<Locale, string> = {
-  "es-AR": "Español (AR)",
-  "es-MX": "Español (MX)",
-  en: "English",
-  pt: "Português",
-}
+const footerLocales: { value: Locale; label: string }[] = [
+  { value: "es-AR", label: "Español" },
+  { value: "en", label: "English" },
+  { value: "pt", label: "Português" },
+]
 
 const socials = [
   { icon: Instagram, href: "https://www.instagram.com/creeadores/followers/", label: "Instagram" },
@@ -103,9 +102,9 @@ export function LandingFooter() {
                 className="appearance-none bg-transparent text-white/40 hover:text-white/70 transition-colors cursor-pointer pr-4 outline-none"
                 style={{ fontSize: "12px", fontWeight: 400 }}
               >
-                {SUPPORTED_LOCALES.map((loc) => (
-                  <option key={loc} value={loc} className="bg-[#0019DA] text-white">
-                    {localeLabels[loc]}
+                {footerLocales.map((loc) => (
+                  <option key={loc.value} value={loc.value} className="bg-[#0019DA] text-white">
+                    {loc.label}
                   </option>
                 ))}
               </select>
